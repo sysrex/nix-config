@@ -1,0 +1,4 @@
+.direnv
+
+# Ignore locally built derivations (eg. ISO images)
+result

@@ -1,0 +1,28 @@
+{
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "haskell.formattingProvider": "fourmolu",
+    "haskell.manageHLS": "PATH",
+    "haskell.openSourceInHackage": false,
+    "haskell.openDocumentationInHackage": false,
+    "haskell.plugin.eval.config.exception": true,
+    "haskell.plugin.fourmolu.config.external": true,
+    "nixEnvSelector.suggestion": false,
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "nix.enableLanguageServer": true,
+    "nix.formatterPath": "nixpkgs-fmt",
+    "nix.serverPath": "nixd",
+    "nix.serverSettings": {
+        "nixd": {
+            "formatting": {
+                "command": [
+                    "nixpkgs-fmt"
+                ]
+            },
+        }
+    },
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "editor.fontFamily": "'Berkeley Mono', 'monospace', monospace"
+}
